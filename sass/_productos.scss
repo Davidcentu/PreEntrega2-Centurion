@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    margin: 2em;
+}
+
+.carousel{
+    text-align: center;
+}
+
+.joyas_container{
+    @include grid(1 , 2);
+    margin-top: 30px;
+    @media (min-width: 768px){
+        @include grid (3 , 2);
+    }
+}
+    
+
+.joyas{
+        text-align: center;
+        padding: 10px;
+    }
+
+
+.joyas_caja{
+    padding: 15px;
+    box-shadow: 18px 0px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 2em;
+    .joyas_caja img{
+        width: $ancho;
+    }
+}

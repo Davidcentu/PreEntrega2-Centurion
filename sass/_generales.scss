@@ -1,0 +1,83 @@
+body{
+    font-size: 62,5%;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+
+#logo{
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+#buscar{
+    color: black;
+    border: 1px solid  white;
+    background-color: wheat;
+    width: $ancho;
+}
+
+.carrito{
+    margin-right: 2em;
+    margin-left: 1em;
+    padding: 10px;
+    max-width: 100%;
+}
+
+
+li{
+    list-style-type: none;
+}
+
+a{
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover{ color: blue;
+        }
+}
+
+
+
+.header{  
+    position: sticky;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+button{
+    background-color: $boton;
+    border-radius: 10px;
+    width: $ancho;
+    font-weight: 700;
+}
+
+button:hover{
+    color: $hover;
+}
+
+.footer_grid{
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    gap: 3em;
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: 35px;
+        height: 35px;
+        margin-left: 5em;
+    }
+}
+
+
+
+.derechos{
+    text-align: center;
+    font-weight: 900;
+}

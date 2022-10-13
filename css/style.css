@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+body {
+  font-size: 62, 5%;
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+#logo {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+}
+
+#buscar {
+  color: black;
+  border: 1px solid white;
+  background-color: wheat;
+  width: auto;
+}
+
+.carrito {
+  margin-right: 2em;
+  margin-left: 1em;
+  padding: 10px;
+  max-width: 100%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: blue;
+}
+
+.header {
+  position: -webkit-sticky;
+  position: sticky;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+button {
+  background-color: white;
+  border-radius: 10px;
+  width: auto;
+  font-weight: 700;
+}
+
+button:hover {
+  color: blue;
+}
+
+.footer_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  display: flex;
+  justify-content: space-around;
+}
+.footer_grid img {
+  width: 35px;
+  height: 35px;
+  margin-left: 5em;
+}
+
+.derechos {
+  text-align: center;
+  font-weight: 900;
+}
+
+.flex-container {
+  margin-top: 15em;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 0;
+}
+@media (min-width: 768px) {
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2;
+    grid-template-rows: minmax(100px, auto);
+  }
+}
+@media (min-width: 1024px) {
+  .flex-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3;
+  }
+}
+
+.caja {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: auto;
+  margin-left: 1em;
+  max-width: 100%;
+  box-shadow: 18px 0px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+}
+.caja img {
+  width: auto;
+}
+.caja p {
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.ofertas h1 {
+  text-align: center;
+  margin-top: 2em;
+  padding: 10px;
+  margin-top: 5em;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.empresa {
+  box-shadow: 18px 0px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+  height: auto;
+  text-align: center;
+  margin: 2em;
+}
+
+.envios {
+  text-align: center;
+}
+.envios img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #FFFFFF;
+  }
+  .empresa {
+    padding: 2%;
+    width: 45em;
+    margin: 5%;
+  }
+  .caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 5px;
+    margin-left: 3em;
+    width: auto;
+    transition: all 2s;
+  }
+  .caja img {
+    width: 10em;
+    margin-left: 1em;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  .empresa {
+    margin-left: 35%;
+  }
+}
+h1 {
+  text-align: center;
+  margin: 2em;
+}
+
+.carousel {
+  text-align: center;
+}
+
+.joyas_container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .joyas_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2;
+  }
+}
+
+.joyas {
+  text-align: center;
+  padding: 10px;
+}
+
+.joyas_caja {
+  padding: 15px;
+  box-shadow: 18px 0px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 2em;
+}
+.joyas_caja .joyas_caja img {
+  width: auto;
+}
+
+.formulario__duda {
+  text-align: center;
+  margin-top: 6%;
+  margin-bottom: 0%;
+}
+
+.formulario h5 {
+  text-align: center;
+}
+.formulario h5 input, .formulario h5 textarea {
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+}
+.formulario h5 textarea {
+  padding: 70px;
+  text-align: start;
+}
+.formulario h5 h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 3%;
+  border-radius: 7px;
+}
+
+#boton {
+  background-color: #31384A;
+  color: #fff;
+  padding: 20px;
+}
+
+#boton:hover {
+  cursor: pointer;
+}
+
+.contacto {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.comocomprar {
+  margin-left: 8em;
+  margin: 3em;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  padding: 10%;
+}
+.comocomprar h6 a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .comocomprar {
+    margin-top: 10px;
+  }
+}
+
+.registro {
+  text-align: center;
+  margin-top: 100px;
+  padding: 20px;
+  width: 450px;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  margin-top: 5%;
+  margin-bottom: 0%;
+}
+.registro input, .registro textarea {
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 20px;
+  border: none;
+  width: 100%;
+}
+.registro textarea {
+  padding: 70px;
+  text-align: start;
+}/*# sourceMappingURL=style.css.map */

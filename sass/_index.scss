@@ -1,0 +1,95 @@
+
+
+.flex-container{
+    margin-top: 15em;
+    @include grid (1 , 0);
+    @media (min-width: 768px){
+        @include grid (2 , 2);
+        grid-template-rows: minmax(100px, auto) ;
+    }
+    @media (min-width: 1024px){
+    @include grid (3 , 3)
+        
+    }
+}
+
+.caja{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: $ancho;
+    margin-left: 1em;
+    max-width: 100%;
+    box-shadow: 18px 0px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 2em;
+    img{
+        width: $ancho;
+    }
+    p{
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    }
+}
+
+.ofertas h1{
+    text-align: center;
+    margin-top: 2em;
+    padding: 10px;
+    margin-top: 5em;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.empresa{  
+    box-shadow: 18px 0px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    border-radius: 2em;
+    height: auto;
+    text-align: center;
+    margin: 2em;
+}
+
+.envios{
+    text-align: center;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 768px ){
+    body{
+        background-color: #FFFFFF;
+        
+    }
+
+    .empresa{
+        padding: 2%;
+        width: 45em;
+        margin: 5%;
+    }
+
+    .caja{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5px;
+        margin-left: 3em;
+        width: auto;
+        transition: all 2s;
+        img{
+            width: 10em;
+            margin-left: 1em;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .empresa{
+            margin-left: 35%;
+            
+        }
+        
+    }
+
+}

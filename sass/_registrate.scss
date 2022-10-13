@@ -1,0 +1,27 @@
+.registro{
+    text-align: center;
+    margin-top: 100px;
+    padding: 20px;
+    width: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin-top: 5%;
+    margin-bottom: 0%;
+    input, textarea{
+            margin-bottom: 20px;
+            padding: 7px;
+            box-sizing: border-box;
+            font-size: 20px;
+            border: none;
+            width: 100%;
+            
+    }
+    textarea{
+    padding: 70px;
+    text-align: start;
+    }
+    
+}
