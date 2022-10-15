@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 body {
   font-size: 62, 5%;
-  background-color: #74EBD5;
-  background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+  background-color: white;
   min-height: 100vh;
   max-width: 100%;
 }
@@ -13,18 +12,39 @@ body {
   padding: 10px;
 }
 
+#logo:hover {
+  transform: scale(1.5);
+  transition-duration: 1.5s;
+}
+
+#busqueda {
+  width: auto;
+}
+
+#barra {
+  width: auto;
+  padding: 0%;
+  background-color: white;
+}
+
 #buscar {
-  color: black;
-  border: 1px solid white;
+  border-radius: 3px white;
   background-color: wheat;
   width: auto;
 }
 
+#buscar:hover {
+  background-color: aliceblue;
+}
+
 .carrito {
-  margin-right: 2em;
-  margin-left: 1em;
   padding: 10px;
-  max-width: 100%;
+  width: auto;
+}
+@media (min-width: 1024px) {
+  .carrito {
+    margin-right: 5%;
+  }
 }
 
 li {
@@ -48,6 +68,7 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
+  width: auto;
 }
 
 button {
@@ -99,6 +120,10 @@ button:hover {
     grid-template-columns: repeat(3, 1fr);
     gap: 3;
   }
+  .flex-container .caja:hover {
+    transform: scale(1.5) translateX(0px);
+    transition-duration: 1s;
+  }
 }
 
 .caja {
@@ -108,6 +133,7 @@ button:hover {
   padding: 10px;
   width: auto;
   margin-left: 1em;
+  margin: 5em;
   max-width: 100%;
   box-shadow: 18px 0px 15px -3px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   border-radius: 2em;
@@ -147,9 +173,6 @@ button:hover {
 }
 
 @media (min-width: 768px) {
-  body {
-    background-color: #FFFFFF;
-  }
   .empresa {
     padding: 2%;
     width: 45em;
@@ -171,7 +194,10 @@ button:hover {
 }
 @media (min-width: 768px) and (min-width: 1024px) {
   .empresa {
-    margin-left: 35%;
+    margin-left: 30%;
+  }
+  .flex-container {
+    margin-top: 5%;
   }
 }
 h1 {
@@ -221,6 +247,13 @@ h1 {
   text-align: center;
 }
 .formulario h5 input, .formulario h5 textarea {
+  width: 400px;
+  margin: auto;
+  background: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  margin-bottom: 3em;
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
@@ -228,16 +261,23 @@ h1 {
   border: none;
   width: 100%;
 }
-.formulario h5 textarea {
-  padding: 70px;
-  text-align: start;
-}
-.formulario h5 h2 {
-  color: #fff;
+.formulario h5 h1 {
   text-align: center;
-  margin: 0;
-  font-size: 30px;
   margin-bottom: 20px;
+  margin-top: 0;
+}
+.formulario h5 input, .formulario h5 select {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 5px;
+}
+.formulario h5 input[type=submit] {
+  width: 30%;
+  margin: auto;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 form {
@@ -249,21 +289,18 @@ form {
   margin-top: 3%;
   border-radius: 7px;
 }
-
-#boton {
-  background-color: #31384A;
-  color: #fff;
-  padding: 20px;
-}
-
-#boton:hover {
-  cursor: pointer;
+form textarea {
+  padding: 3em;
+  text-align: start;
 }
 
 .contacto {
   text-align: center;
-  margin-top: 100px;
-  padding: 20px;
+  margin: 5em;
+}
+.contacto img {
+  width: 38px;
+  height: 38px;
 }
 
 .comocomprar {
@@ -281,28 +318,35 @@ form {
   }
 }
 
-.registro {
-  text-align: center;
-  margin-top: 100px;
-  padding: 20px;
-  width: 450px;
+body {
+  background: #fff;
+  font-family: sans-serif;
+}
+
+form {
+  width: 400px;
   margin: auto;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px 20px;
-  box-sizing: border-box;
-  border-radius: 7px;
-  margin-top: 5%;
-  margin-bottom: 0%;
+  background: #ddd;
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  margin-bottom: 3em;
 }
-.registro input, .registro textarea {
+form h1 {
+  text-align: center;
   margin-bottom: 20px;
-  padding: 7px;
-  box-sizing: border-box;
-  font-size: 20px;
-  border: none;
-  width: 100%;
+  margin-top: 0;
 }
-.registro textarea {
-  padding: 70px;
-  text-align: start;
+form input, form select {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 5px;
+}
+form input[type=submit] {
+  width: 30%;
+  margin: auto;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

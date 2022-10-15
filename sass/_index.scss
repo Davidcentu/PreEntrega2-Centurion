@@ -8,18 +8,23 @@
         grid-template-rows: minmax(100px, auto) ;
     }
     @media (min-width: 1024px){
+        .caja:hover{
+            transform: scale(1.5) translateX(0px);
+            transition-duration: 1s;
+        }
     @include grid (3 , 3)
         
     }
 }
 
-.caja{
+.caja{ 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     width: $ancho;
     margin-left: 1em;
+    margin: 5em;
     max-width: 100%;
     box-shadow: 18px 0px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
     border-radius: 2em;
@@ -32,6 +37,7 @@
     text-align: center;
     }
 }
+
 
 .ofertas h1{
     text-align: center;
@@ -59,10 +65,6 @@
 }
 
 @media (min-width: 768px ){
-    body{
-        background-color: #FFFFFF;
-        
-    }
 
     .empresa{
         padding: 2%;
@@ -86,10 +88,12 @@
 
     @media (min-width: 1024px) {
         .empresa{
-            margin-left: 35%;
+            margin-left: 30%;
             
         }
-        
+        .flex-container{
+            margin-top: 5%;
+        }
     }
 
 }
