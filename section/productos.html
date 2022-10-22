@@ -18,7 +18,7 @@
     <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="../index.html">
                     <img src="../img/logo.jpg" alt="logo" id="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="menu">
@@ -29,20 +29,17 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link active" href="registrate.html">Registrate</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Productos
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Registrate
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="acero.html">Acero</a></li>
-                            <li><a class="dropdown-item" href="plata.html">Plata</a></li>
-                            <li><a class="dropdown-item" href="platayoro.html">Plata y Oro</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="productos.html">Todos Los Productos</a></li>
-                        </ul>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="registrate.html">Registrate</a></li>
+                        <li><a class="dropdown-item" href="usuario.html"> Ya tengo un usuario</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item"> 
+                        <a class="nav-link active" href="productos.html">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="contacto.html">Contacto</a>
@@ -53,11 +50,11 @@
                     </ul>
                     <form class="d-flex" id="barra">
                     <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search" id="busqueda">
-                    <button class="btn btn-outline-success" type="submit" id="buscar">Buscar</button>
+                    <button class="btn" type="submit" id="buscar">Buscar</button>
                     </form>
-                    <div class="carrito"><a href="#">
-                        <img src="../img/carrito.jpg" alt="carrito">
-                        <p>Mi Carrito</p>
+                    <div class="carrito"><a href="registrate.html">
+                        <img src="../img/carrito.svg" alt="carrito">
+                        <p>Carrito</p>
                         </a>
                     </div>
                 </div>
@@ -68,7 +65,6 @@
     
     <div class="carousel">
         <h1>Productos Destacados</h1>
-    
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
             <div class="carousel-item active">
@@ -90,73 +86,100 @@
             <span class="visually-hidden">Next</span>
             </button>
         </div>
-        </div>
+    </div>
 
 
-
+<main>
     <div class="joyas">
         <section class="titulo">
             <h2>Acero</h2>
         </section>
         <div class="joyas_container">
         <div class="joyas_caja">
-            <img src="../img/aros--acero.jpg" alt="aros">
-            <h5><strong>Aros ARGOLLA /acero blanco <br> $1500 </strong></h5>
+            <img src="../img/arosacero.jpg" alt="aros">
+            <p>Aros ARGOLLA /acero blanco </p>
+            <p>$1500</p>
             <button>Agregar Al Carrito</button>
         </div>
         <div class="joyas_caja">
-            <img src="../img/anillo--acero.jpg" alt="anillo acero">
-            <h5><strong> Anillo ERIZO /plata <br> $3000 </strong></h5>
+            <img src="../img/anilloacero.jpg" alt="anillo acero">
+            <p>Anillo ERIZO /plata</p>
+            <p> $3000 </p>
             <button>Agregar Al Carrito</button>
         </div>
         <div class="joyas_caja"> 
-            <img src="../img/aros--argolla.jpg" alt="aros aros argolla">
-            <h5><strong> Aros ARGOLLA /acero <br> $1000 </strong></h5>
+            <img src="../img/arosargolla.jpg" alt="aros argolla">
+            <p> Aros ARGOLLA /acero</p>
+            <p>$1000</p>
+            <button>Agregar Al Carrito</button>
+        </div>
+        <div class="joyas_caja">
+            <img src="../img/arospiedras.jpg" alt="aros con piedras de acero">
+            <p>Aros piedras /acero</p>
+            <p>$1500</p>
             <button>Agregar Al Carrito</button>
         </div>
     </div>
         <section class="titulo">
             <h2>Plata</h2>
         </section>
-        <div class="joyas_container">
+    <div class="joyas_container">
         <div class="joyas_caja">
-            <img src="../img/anillo--bidu.jpg" alt="anillo plata">
-            <h5><strong> Anillo BIDU /plata y oro <br> $3400 </strong></h5>
+            <img src="../img/anillorose.jpg" alt="anillo plata">
+            <p> Anillo cintillo /plata y oro </p>
+            <p>$3500</p>
             <button>Agregar Al Carrito</button>
         </div>
         <div class="joyas_caja"> 
-            <img src="../img/dije--inicial.jpg" alt="dije inicial">
-            <h5> <strong> Dije INICIAL Pasante /plata <br> $1300 </strong> </h5>
+            <img src="../img/dijeinicial.jpg" alt="dije inicial">
+            <p> Dije INICIAL Pasante /plata </p>
+            <p>$1300</p>
             <button>Agregar Al Carrito</button>
         </div>
         <div class="joyas_caja"> 
-            <img src="../img/collar--estrella.jpg" alt="collar plata">
-            <h5><strong> Collar ESTRELLA/ oro 18k <br> $4500 </strong></h5>
+            <img src="../img/collarestrella.jpg" alt="collar plata">
+            <p> Collar ESTRELLA/ oro 18k </p>
+            <p>$4500</p>
+            <button>Agregar Al Carrito</button>
+        </div>
+        <div class="joyas_caja">
+            <img src="../img/dijepasante.jpg" alt="dije pasante de plata">
+            <p>Dije pasante chapita corazón/ Plata</p>
+            <p>$1000</p>
             <button>Agregar Al Carrito</button>
         </div>
     </div>
         <section class="titulo">
             <h2>Plata y oro</h2>
         </section>
-        <div class="joyas_container">
+    <div class="joyas_container">
         <div class="joyas_caja">
-            <img src="../img/anillos--multiples.jpg" alt="anillos plata y oro">
-            <h5><strong> Anillos MULTIPLES /acero blanco <br> $4000 </strong></h5>
+            <img src="../img/anillosmultiples.jpg" alt="anillos plata y oro">
+            <p> Anillos MULTIPLES /acero blanco</p>
+            <p>$4000</p>
             <button>Agregar Al Carrito</button>
         </div>
         <div class="joyas_caja">  
             <img src="../img/pulsera.jpg" alt="pulsera de plata y oro">
-            <h5><strong> Pulsera /oro 18k <br> $5000 </strong></h5>
+            <p> Pulsera /oro 18k</p>
+            <p>$5000</p>
             <button>Agregar Al Carrito</button>
         </div>
         <div class="joyas_caja">
-            <img src="../img/medalla--oro.jpg" alt="medalla plata y oro">
-            <h5><strong> Medalla /plata y oro <br> $3000 </strong></h5>
+            <img src="../img/medallaoro.jpg" alt="medalla plata y oro">
+            <p> Medalla /plata y oro</p>
+            <p>$3000</p>
+            <button>Agregar Al Carrito</button>
+        </div>
+        <div class="joyas_caja">
+            <img src="../img/dijeflores.jpg" alt="dije flores de plata y oro">
+            <p>Dije Flores 22mm/ plata y oro</p>
+            <p>$6000</p>
             <button>Agregar Al Carrito</button>
         </div>
     </div>
     </div>
-    
+</main>
 
 
     <footer>
@@ -169,7 +192,7 @@
                     <img src="../img/instagram.jpg" alt="instagram">
                     <p>SEGUINOS EN INSTAGRAM</p></a>
             </div>
-            <nav>
+            <div>
                 <ul class="footer">
                     <li> <a href="index.html">Inicio</a>
                     </li>
@@ -182,7 +205,7 @@
                     <li><a href="comocomprar.html">Como Comprar</a>
                     </li>
                 </ul>
-            </nav>
+            </div>
         </div>
             <div class="derechos">
             <p>2022 | MarJoyas | Todos los derechos reservados | Términos y condiciones</p>

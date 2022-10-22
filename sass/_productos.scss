@@ -1,32 +1,65 @@
-h1{
-    text-align: center;
-    margin: 2em;
-}
 
-.carousel{
-    text-align: center;
-}
 
-.joyas_container{
-    @include grid(1 , 2);
-    margin-top: 30px;
-    @media (min-width: 768px){
-        @include grid (3 , 2);
+
+    h1{
+        text-align: center;
+        margin: 2em;
     }
-}
+
+    .carousel{
+    text-align: center;
+    }
+
+    .joyas_container{
+        @include grid(1 , 2);
+        margin-top: 30px;
+    }
     
 
-.joyas{
+    .joyas{
         text-align: center;
-        padding: 10px;
+        margin: 5em;
+        img{
+            width: 15em;
+        }
+        
     }
 
+    .titulo{
+        padding: 15px;
+    }
 
-.joyas_caja{
-    padding: 15px;
-    box-shadow: 18px 0px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
-    border-radius: 2em;
-    .joyas_caja img{
+    .joyas_caja{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
         width: $ancho;
+        max-width: 100%;
+        box-shadow: 18px 0px 15px -3px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+        img{
+        width: 15em;
+        }
+        p{
+        font-weight: bold;
+        text-align: center;
+        font-size: 20px;
+        }
+    }
+
+@media (min-width: 768px) {
+    .joyas_container{
+        @include grid (2, 2);
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .joyas_container{
+        @include grid (3, 3);
+    }
+    .joyas_caja{
+        margin-left: 1em;
     }
 }

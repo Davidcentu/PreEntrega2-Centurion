@@ -1,3 +1,9 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-size: 62,5%;
     background-color: white;
@@ -39,12 +45,19 @@ transition-duration: 1.5s;
 }
 
 .carrito{
+
     padding: 10px;
     width: auto;
     @media (min-width: 1024px) {
-            margin-right: 5%;
+        margin-right: 5%;
     }
-    
+    p { 
+    background-color: $boton;
+    width: 4em;
+    color: #fff;
+    margin-top: 10px;
+    padding: 5px;
+    }
 }
 
 
@@ -72,13 +85,18 @@ a{
 
 button{
     background-color: $boton;
-    border-radius: 10px;
+    color: #fff;
+    border-radius: 5px;
     width: $ancho;
     font-weight: 700;
+    padding: 5px;
 }
 
 button:hover{
     color: $hover;
+}
+footer{
+    background-color: #f8f9fa;
 }
 
 .footer_grid{
