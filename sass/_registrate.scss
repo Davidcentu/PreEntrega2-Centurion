@@ -1,29 +1,23 @@
 
-    body {
-        background: #fff;
-        font-family: sans-serif;
+form {
+    width: 400px;
+    margin: auto;
+    background: #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    color: black;
+    margin-bottom: 3em;
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 0;
     }
-    
-    form {
-        width: 400px;
-        margin: auto;
-        background: #ddd;
-        padding: 20px;
-        margin-top: 20px;
-        color: black;
-        margin-bottom: 3em;
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-            margin-top: 0;
-        }
-        input,select {
-            width: 100%;
-            font-size: 1.2em;
-            padding: 5px;
-        }
-        border: none;
-        cursor: pointer;
-        
+    input,select {
+        width: 100%;
+        font-size: 1.2em;
+        padding: 5px;
     }
+    border: none;
+    cursor: pointer;
+}
 

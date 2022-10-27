@@ -1,11 +1,6 @@
 
-
-    
 .flex-container{
-    margin-top: 15em;
     @include grid (1 , 0);
-    
-    
 }
 
 .caja{ 
@@ -33,7 +28,6 @@
     text-align: center;
     margin-top: 2em;
     padding: 10px;
-    margin-top: 5em;
 }
 
 .empresa{  
@@ -41,6 +35,10 @@
     height: auto;
     text-align: center;
     margin: 2em;
+    button{
+        background-color: aliceblue;
+        color: black;
+    }
 }
 
 .envios{
@@ -57,17 +55,11 @@
         grid-template-rows: minmax(100px, auto) ;
         
     }
-
     .empresa{
         padding: 2%;
         width: 45em;
         margin: 5%;
-        button{
-            background-color: aliceblue;
-            color: black;
-        }
     }
-
     .caja{
         display: flex;
         flex-direction: column;
@@ -79,7 +71,6 @@
         transition: all 2s;
         img{
             width: 15em;
-            
         }
     }
 }
